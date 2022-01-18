@@ -10,9 +10,9 @@ public class LoginTest extends BaseTest{
     @Test
     public void login(){
         open("/login");
-        $("#inputEmail").sendKeys("pasha_vorobyov@inbox.ru");
+        $("#inputEmail").sendKeys(email);
         $(By.xpath("//input[@id='inputPassword']"))
-                .setValue("1234qqqwwww")
+                .setValue(password)
                 .submit();
         $(By.xpath("//a[@id='createButton']")).shouldBe(Condition.visible);
     }
@@ -20,9 +20,9 @@ public class LoginTest extends BaseTest{
     @Test
     public void login2(){
         open("/login");
-        $("#inputEmail").sendKeys("pasha_vorobyov@inbox.ru");
+        $("#inputEmail").sendKeys(email);
         $(By.xpath("//input[@id='inputPassword']"))
-                .setValue("1234qqqwwww")
+                .setValue(password)
                 .submit();
         $(By.xpath("//a[@id='createButton']")).shouldBe(Condition.visible);
     }
