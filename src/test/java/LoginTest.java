@@ -12,7 +12,7 @@ public class LoginTest extends BaseTest{
         open("/login");
         $("#inputEmail").sendKeys("pasha_vorobyov@inbox.ru");
         $(By.xpath("//input[@id='inputPassword']"))
-                .setValue("aq3cuw0x")
+                .setValue("1234qqqwwww")
                 .submit();
         $(By.xpath("//a[@id='createButton']")).shouldBe(Condition.visible);
     }
@@ -22,7 +22,7 @@ public class LoginTest extends BaseTest{
         open("/login");
         $("#inputEmail").sendKeys("pasha_vorobyov@inbox.ru");
         $(By.xpath("//input[@id='inputPassword']"))
-                .setValue("aq3cuw0x")
+                .setValue("1234qqqwwww")
                 .submit();
         $(By.xpath("//a[@id='createButton']")).shouldBe(Condition.visible);
     }
