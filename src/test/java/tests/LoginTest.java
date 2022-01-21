@@ -36,7 +36,7 @@ public class LoginTest extends BaseTest {
         $(By.xpath("//div[contains(@class, 'style_empty')]")).shouldBe(Condition.visible);
     }
     @Test
-    public void addFilterTagInShareLaneProject1(){
+    public void enterInTheFieldSearchForCases(){
         enterToShareLaneProject();
         $(By.xpath("//input[@placeholder='Search for cases']")).setValue("Ввод пустого поля имени");
         $(By.xpath("//span[contains(text(),'Ввод пустого поля имени')]")).shouldHave(Condition.visible);
