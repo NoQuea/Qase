@@ -11,6 +11,7 @@ public class LoginTest extends BaseTest {
 
     @Test
     public void login(){
+
         open("/login");
         $("#inputEmail").setValue(email);
         $(By.xpath("//input[@id='inputPassword']"))
@@ -41,4 +42,5 @@ public class LoginTest extends BaseTest {
         $(By.xpath("//input[@placeholder='Search for cases']")).setValue("Ввод пустого поля имени");
         $(By.xpath("//span[contains(text(),'Ввод пустого поля имени')]")).shouldHave(Condition.visible);
     }
+
 }
